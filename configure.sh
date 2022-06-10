@@ -6,7 +6,7 @@ if [[ -z "${email}" ]]; then
     echo "No email given, defaulting to ${email}"
 fi
 
-git config --global core.editor emacs-nox
+git config --global core.editor emacs -nw
 git config --global credential.helper libsecret
 git config --global --add credential.helper gnome-keyring
 git config --global push.default simple
